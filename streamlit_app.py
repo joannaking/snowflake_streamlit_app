@@ -1,7 +1,7 @@
 import streamlit
 import pandas
 import requests
-import snowflake.connector
+
 from urllib.error import URLError
 
 streamlit.title('My Parents New Healthy Diner')
@@ -77,6 +77,7 @@ streamlit.dataframe(fruityvice_normalized)
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
 
+import snowflake.connector
 # dont run anything past here while we troubleshoot
 streamlit.stop()
 
